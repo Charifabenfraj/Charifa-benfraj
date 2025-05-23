@@ -1,0 +1,76 @@
+/* Import des polices Google (à importer une seule fois) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Directives Tailwind - à compiler via PostCSS, pas à utiliser directement dans une page HTML */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables globales */
+:root {
+  --bleu-marine: #0A1128;
+  --bleu-marine-clair: #1C2E4A;
+  --violet: #7B2CBF;
+  --violet-clair: #9D4EDD;
+  --blanc: #FFFFFF;
+  --gris-clair: #F5F5F5;
+  --gris-fonce: #333333;
+}
+
+/* Base styles */
+@layer base {
+  body {
+    @apply font-roboto text-gray-800 bg-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat font-bold;
+  }
+}
+
+/* Composants personnalisés */
+@layer components {
+  .btn-primary {
+    @apply bg-[var(--violet)] text-white px-6 py-2 rounded-md hover:bg-[var(--violet-clair)] transition-all duration-300;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-8 relative inline-block;
+  }
+
+  .section-title::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-1/2 h-1 bg-[var(--violet)] rounded-full;
+  }
+
+  .section-container {
+    @apply py-16 px-4 md:px-8 max-w-7xl mx-auto;
+  }
+
+  .dark-section {
+    @apply bg-[var(--bleu-marine)] text-white;
+  }
+
+  .light-section {
+    @apply bg-[var(--gris-clair)] text-[var(--gris-fonce)];
+  }
+}
+
+/* Animations personnalisées */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.8s ease-out;
+}
