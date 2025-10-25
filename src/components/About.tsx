@@ -57,7 +57,7 @@ const About: React.FC = () => {
               </div>
               <div className="bg-white p-4 rounded-lg shadow-md">
                 <h4 className="font-semibold mb-1">Téléphone</h4>
-                <p>27 998 555</p>
+                <p>+216 27 998 555</p>
               </div>
             </div>
           </motion.div>
