@@ -1,13 +1,14 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+import React from 'react';
+import { FaArrowUp, FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-scroll';
-import { FaLinkedin, FaEnvelope, FaArrowUp,FaGithub } from 'react-icons/fa';
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-[var(--bleu-marine)] text-white py-12">
       <div className="container mx-auto px-4">
+        <p className="text-center text-sm">&copy; {currentYear} All rights reserved.</p>
         <div className="flex flex-col items-center">
           {/* Flèche vers le haut */}
           <Link

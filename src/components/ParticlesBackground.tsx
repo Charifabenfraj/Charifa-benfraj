@@ -1,7 +1,7 @@
 import React from "react";
 import Particles from "react-tsparticles";
-import { loadSlim } from "tsparticles-slim";
 import { Engine } from "tsparticles-engine";
+import { loadSlim } from "tsparticles-slim";
 
 const ParticlesBackground: React.FC = () => {
   const customInit = async (engine: Engine) => {
@@ -57,12 +57,10 @@ const ParticlesBackground: React.FC = () => {
       move: {
         enable: true,
         speed: 0.2,
-        direction: "none",
+        direction: "none" as const,
         random: true,
         straight: false,
-        outModes: {
-          default: "bounce",
-        },
+        outModes: "bounce" as const,
       },
       // Utilisation des "twinkle" pour un effet scintillant
       twinkle: {
@@ -80,6 +78,7 @@ const ParticlesBackground: React.FC = () => {
     <Particles
       id="tsparticles"
       init={customInit}
+      options={particlesOptions}
       className="absolute inset-0 z-0"
     />
   );

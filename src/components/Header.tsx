@@ -1,4 +1,4 @@
-import { Briefcase, Code, FolderOpen, GraduationCap, Home, Mail, Menu, User, X, Globe } from 'lucide-react';
+import { Briefcase, Code, FolderOpen, GraduationCap, Home, Mail, Menu, User, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 import { useTranslation } from '../hooks/useTranslation';
@@ -16,7 +16,7 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const { language, toggleLanguage, t } = useTranslation();
+  const { t } = useTranslation();
 
   const navLinks = [
     { to: 'home', label: t('home'), icon: Home },

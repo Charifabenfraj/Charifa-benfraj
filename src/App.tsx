@@ -1,18 +1,17 @@
-import { useState, useEffect } from 'react';
-import { Element } from 'react-scroll';
 import { motion } from 'framer-motion';
-import type React from 'react'; // Si vous ne l'utilisez que pour les types
+import { useEffect, useState } from 'react';
+import { Element } from 'react-scroll';
 
 // Components
+import About from './components/About';
+import Contact from './components/Contact';
+import Education from './components/Education';
+import Experience from './components/Experience';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import Experience from './components/Experience';
 import Projects from './components/Projects';
-import Education from './components/Education';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Skills from './components/Skills';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);

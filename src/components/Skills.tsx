@@ -1,6 +1,6 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { FaCode, FaDatabase, FaMobile } from 'react-icons/fa';
+import React from 'react';
+import { FaCode, FaDatabase } from 'react-icons/fa';
 
 const Skills: React.FC = () => {
   const skillCategories = [
