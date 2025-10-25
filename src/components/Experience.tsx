@@ -1,9 +1,17 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+import React from 'react';
 import { FaBriefcase } from 'react-icons/fa';
 
 const Experience: React.FC = () => {
   const experiences = [
+    {
+      title: 'Stage en développement frontend',
+      company: 'Coworky',
+      location: 'Nabeul',
+      date: 'Juillet - Août 2025',
+      description: 'Développement d\'une application d\'évaluation automatique avec React et n8n. Création d\'un système qui génère des tests à partir de documents (PDF, PPTX) et permet l\'évaluation automatique des étudiants. Implémentation d\'une interface utilisateur intuitive et responsive.',
+      className: 'text-justify sm:text-center lg:text-justify max-w-2xl mx-auto'
+    },
     {
       title: 'Projet de fin d\'études (PFE)',
       company: 'ICONE CONCEPT',
@@ -69,7 +77,7 @@ const Experience: React.FC = () => {
                 <h4 className="text-[var(--violet-clair)] font-semibold mb-3">
                   {exp.company}, {exp.location}
                 </h4>
-                <p className="text-gray-300">{exp.description}</p>
+                <p className="text-gray-300 text-justify sm:text-center lg:text-justify">{exp.description}</p>
               </div>
             </motion.div>
           ))}

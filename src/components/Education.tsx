@@ -1,5 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+import React from 'react';
 import { FaGraduationCap } from 'react-icons/fa';
 
 const Education: React.FC = () => {
@@ -67,17 +67,17 @@ const Education: React.FC = () => {
                 </div>
 
                 {/* Contenu */}
-                <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-full">
+                <div className="bg-gray-50/90 dark:bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 h-full border border-gray-100 dark:border-gray-700">
                   {/* Période (visible uniquement en desktop) */}
                   <div className="hidden md:block text-[var(--violet)] font-semibold mb-4 text-center">
                     {edu.period}
                   </div>
                   
-                  <h3 className="text-xl font-bold mb-2">{edu.degree}</h3>
-                  <h4 className="text-[var(--bleu-marine)] font-semibold mb-3">
+                  <h3 className="text-xl font-bold mb-2 dark:text-white">{edu.degree}</h3>
+                  <h4 className="text-[var(--violet-clair)] font-semibold mb-3">
                     {edu.institution}, {edu.location}
                   </h4>
-                  <p className="text-gray-700">{edu.description}</p>
+                  <p className="text-gray-600 dark:text-gray-300 text-justify sm:text-center lg:text-justify">{edu.description}</p>
                 </div>
               </motion.div>
             ))}

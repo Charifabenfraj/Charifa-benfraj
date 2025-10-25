@@ -1,12 +1,12 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { FaUser, FaLanguage } from 'react-icons/fa';
+import React from 'react';
+import { FaLanguage, FaUser } from 'react-icons/fa';
 
 const About: React.FC = () => {
   const languages = [
-    { name: 'Français', level: 90 },
+    { name: 'Français', level: 80 },
     { name: 'Arabe', level: 100 },
-    { name: 'Anglais', level: 75 }
+    { name: 'Anglais', level: 65 }
   ];
 
   return (
@@ -36,20 +36,18 @@ const About: React.FC = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Qui suis-je</h3>
-                <p className="text-gray-700">
-                  Étudiante en première année du cycle d'ingénieur à ESPRIT, passionnée par le développement
-                  web et mobile. Sérieuse, motivée et curieuse, je cherche à renforcer mes compétences
-                  techniques à travers des projets concrets, en particulier dans les domaines du full stack.
+                <p className="text-gray-800 text-justify sm:text-center lg:text-justify max-w-2xl mx-auto">
+                  Étudiante en deuxième année du cycle d'ingénieur à ESPRIT, spécialisée en Business Intelligence, passionnée par le développement web et mobile. Sérieuse, motivée et curieuse, je cherche à renforcer mes compétences techniques à travers des projets concrets, notamment dans les domaines du développement full stack et de l'analyse de données.
                 </p>
               </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-              <div className="bg-white p-4 rounded-lg shadow-md">
-                <h4 className="font-semibold mb-1">Nom</h4>
-                <p>Charifa BEN FRAJ</p>
+              <div className="bg-gray-50/90 dark:bg-gray-800/50 backdrop-blur-sm p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <h4 className="font-semibold mb-1 dark:text-gray-200">Nom</h4>
+                <p className="dark:text-gray-300">Charifa BEN FRAJ</p>
               </div>
-              <div className="bg-white p-4 rounded-lg shadow-md">
+              <div className="bg-gray-50/90 dark:bg-gray-800/50 backdrop-blur-sm p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <h4 className="font-semibold mb-1">Email</h4>
                 <p>charifabenfraj20@gmail.com</p>
               </div>

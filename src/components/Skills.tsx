@@ -8,9 +8,9 @@ const Skills: React.FC = () => {
       title: 'Frameworks',
       icon: <FaCode className="h-6 w-6" />,
       skills: [
-        { name: 'Angular', level: 85 },
-        { name: 'Symfony', level: 80 },
-        { name: 'React.js', level: 75 },
+        { name: 'React.js', level: 80 },
+        { name: 'Angular', level: 60 },
+        { name: 'Symfony', level: 70 },
         { name: 'Flutter', level: 85 },
         { name: 'Android', level: 65 }
       ]

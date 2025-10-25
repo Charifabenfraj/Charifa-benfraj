@@ -1,7 +1,7 @@
-import React from 'react';
 import { useState, useEffect } from 'react';
 import { Element } from 'react-scroll';
 import { motion } from 'framer-motion';
+import type React from 'react'; // Si vous ne l'utilisez que pour les types
 
 // Components
 import Header from './components/Header';
