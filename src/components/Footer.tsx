@@ -3,12 +3,10 @@ import React from 'react';
 import { FaArrowUp, FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 const Footer: React.FC = () => {
-  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-[var(--bleu-marine)] text-white py-12">
       <div className="container mx-auto px-4">
-        <p className="text-center text-sm">&copy; {currentYear} All rights reserved.</p>
         <div className="flex flex-col items-center">
           {/* Flèche vers le haut */}
           <Link
@@ -110,7 +108,7 @@ const Footer: React.FC = () => {
           {/* Réseaux sociaux */}
 <div className="flex space-x-4 mb-8">
   <a
-    href="https://linkedin.com/in/charifa-ben-fraj"
+    href="https://www.linkedin.com/in/charifa-ben-fraj-919074233/" 
     target="_blank"
     rel="noopener noreferrer"
     className="bg-[var(--bleu-marine-clair)] p-3 rounded-full hover:bg-[var(--violet)] transition-colors duration-300"
@@ -118,7 +116,7 @@ const Footer: React.FC = () => {
     <FaLinkedin className="h-5 w-5" />
   </a>
   <a
-    href="https://github.com/votre-username"  // Remplacez par votre lien GitHub
+    href="https://github.com/Charifabenfraj"
     target="_blank"
     rel="noopener noreferrer"
     className="bg-[var(--bleu-marine-clair)] p-3 rounded-full hover:bg-[var(--violet)] transition-colors duration-300"
